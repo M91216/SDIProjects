@@ -18,6 +18,34 @@ var willTravel = 4;
 var teamMates = {
     names: ["Delquan", "Renaldo","Jesse","Paul"]
     }    
+console.log("As I read about my team I realize we are the most complete skate team around!")
+
+//JSON Data
+var teamGrind = {
+"team2013": { 
+    "skater1": {
+        "name": "Delquan",
+        "specialty": "Street"
+    },
+    "skater2": {
+        "name": "Renaldo",
+        "specialty": "MegaRamp"
+    },
+    "skater3": {
+        "name": "Jesse",
+        "specialty": "Vert"
+    },
+    "skater4": {
+        "name": "Paul",
+        "specialty": "Street/Vert"        
+    }
+    
+ }
+    
+    
+};
+
+console.log(teamGrind.team2013);
 
 
 //Object Method
@@ -114,6 +142,7 @@ var event = {
 for (var key in event) {       
      console.log("It reads..." + event[key]);
 };
+
 
 
 
