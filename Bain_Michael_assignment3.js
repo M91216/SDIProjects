@@ -8,7 +8,8 @@
 
 
 // My Variable
-var delquanPro = true;
+var skatersNames = [ "Delquan", "Renaldo", "Jesse", "Paul"];
+var DelquanPro = true
 var renaldoPro = true;
 var paulPro = false;
 var jessePro = true;
@@ -139,8 +140,30 @@ allAccess.booFunction(5,4);
 
 
 
+//Array function
 
+console.log("I will now call my team to see what they think about sharing the rooms.");
 
+var teamNames = [ "Delquan", "Joey", "Malik", "Thomas", "Paul"];
+
+    minutesPerMember = [ 5, 10, 2, 7, 14 ];
+    
+for (var teamNumber = 0; teamNumber < teamNames.length; teamNumber++) {
+    
+    var teamName = teamNames[teamNumber],
+    
+        minutesThisMember = minutesPerMember[teamNumber];
+            
+    console.log("Talked to " + teamName + " for " + minutesThisMember + " minutes.");
+    
+    for (var minutes = 0; minutes < minutesThisMember; minutes += 5) {
+        
+        var minutesRemain = minutesThisMember - minutes;
+        
+        
+    }
+}                
+    console.log("I invited " + teamNames + ", I hope they all can fly out to the X-Games.");
 
 
 
