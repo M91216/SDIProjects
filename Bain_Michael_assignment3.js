@@ -144,9 +144,9 @@ allAccess.booFunction(5,4);
 
 console.log("I will now call my team to see what they think about sharing the rooms.");
 
-var teamNames = [ "Delquan", "Joey", "Malik", "Thomas", "Paul"];
+var teamNames = [ "Delquan", " Renaldo", " Jesse", " Paul"];
 
-    minutesPerMember = [ 5, 10, 2, 7, 14 ];
+    minutesPerMember = [ 5, 10, 2, 7, ];
     
 for (var teamNumber = 0; teamNumber < teamNames.length; teamNumber++) {
     
@@ -162,7 +162,7 @@ for (var teamNumber = 0; teamNumber < teamNames.length; teamNumber++) {
         
         
     }
-}                
+};               
     console.log("I invited " + teamNames + ", I hope they all can fly out to the X-Games.");
 
 
