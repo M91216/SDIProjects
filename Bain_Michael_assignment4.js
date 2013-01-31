@@ -38,11 +38,13 @@ var periodPos = email.indexOf(".",atPos);
 }
 //NUMBER DECIMAL FUNCTION
 
+function fixMoney(getMoney) {
+    var value = getMoney
+    value.toFixed(2)
+    return console.log(value.toFixed(2));
+    }
 
-
-
-
-
+//TITLE-CASE FUNCTION
 
 
 
@@ -53,9 +55,10 @@ var periodPos = email.indexOf(".",atPos);
 
 
      return {
-        "validEmail": validEmail
-        ""
-     }
+        "validEmail"    : validEmail,
+        "fixMoney"      : fixMoney,
+        
+    }
 
 }
 
@@ -63,7 +66,5 @@ var newLib = new myLibrary();
 
     
 console.log(newLib.validEmail("bey@uty."));
-
-
-
+console.log(newLib.fixMoney(75454));
 
