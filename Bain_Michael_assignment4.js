@@ -56,6 +56,22 @@ function wordUpper(val) {
 }
 
 //STRING TO NUMBER FUNCTION
+function stringToNum(getNum) {
+    var value = getNum
+    newVal = parseFloat(getNum);
+    return newVal;
+
+}
+
+//TOTAL VALUE OF NUMBERS IN AN ARRAY
+
+
+
+
+
+
+
+
 
 
 
@@ -65,7 +81,7 @@ function wordUpper(val) {
         "validEmail"    : validEmail,
         "fixMoney"      : fixMoney,
         "wordUpper"     : wordUpper,
-        
+        "stringToNum"   : stringToNum
     }
 
 }
@@ -83,3 +99,4 @@ var newLib = new myLibrary();
 console.log(newLib.validEmail("bey@uty."));
 console.log(newLib.fixMoney(75454));
 console.log(newLib.wordUpper("colin kapernick"));
+console.log(newLib.stringToNum("756748477"));
