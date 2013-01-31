@@ -46,9 +46,16 @@ function fixMoney(getMoney) {
 
 //TITLE-CASE FUNCTION
 
+function wordUpper(val) {
+    newVal = ' ';
+    val = val.toLowerCase().split(' ');
+    for (var i=0; i < val.length; i++) {
+            newVal += val[i].substring(0,1).toUpperCase() + val[i].substring(1,val[i].length) + ' ';           
+    }
+    return newVal;
+}
 
-
-
+//STRING TO NUMBER FUNCTION
 
 
 
@@ -57,6 +64,7 @@ function fixMoney(getMoney) {
      return {
         "validEmail"    : validEmail,
         "fixMoney"      : fixMoney,
+        "wordUpper"     : wordUpper,
         
     }
 
@@ -64,7 +72,14 @@ function fixMoney(getMoney) {
 
 var newLib = new myLibrary();
 
+
+
+
+
+
+
+
     
 console.log(newLib.validEmail("bey@uty."));
 console.log(newLib.fixMoney(75454));
-
+console.log(newLib.wordUpper("colin kapernick"));
