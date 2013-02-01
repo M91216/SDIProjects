@@ -61,19 +61,6 @@
 
     }
 
-//PHONE NUMBER VALIDATE
-    function validPhone(phoneNumber) {
-    if (phoneNumber != "") {
-    var validChars = "+- 1234567890()"
-    for (i = 0; i < phoneNumber.length; i++) {   
-    var c = phoneNumber.charAt(i);
-    if (validChars.indexOf(c) < 0) return false;
-    }
-    return true;
-    } else {
-    return false;
-    }
-    }
 
         
 //DAYS BETWEEN DATES
@@ -85,17 +72,28 @@
     console.log(Math.ceil((today.getTime() - birthday.getTime())/ (days)));
     }
 
- 
-
+//CHANGE AND SEPERATE FUNCTION
+    function changeSeperate(changeHere) {
+     var val = changeHere
+     var str = "a,b,c"
+     newVal = str.replace(/a,/,"a/",/b,/,"b/",/c,/,"c/")
+     return newVal
     
+}
+
+
+
+
+
+
 
     return {
-        "validEmail"    : validEmail,
-        "fixMoney"      : fixMoney,
-        "wordUpper"     : wordUpper,
-        "stringToNum"   : stringToNum,
-        "validPhone"    : validPhone,
-        "daysPassed"    : daysPassed
+        "validEmail"     : validEmail,
+        "fixMoney"       : fixMoney,
+        "wordUpper"      : wordUpper,
+        "stringToNum"    : stringToNum,
+        "daysPassed"     : daysPassed,
+        "changeSeperate" : changeSeperate,
     }                    
 
     }
@@ -106,5 +104,5 @@ console.log(newLib.validEmail("bey@uty."));
 console.log(newLib.fixMoney(75454));
 console.log(newLib.wordUpper("colin kapernick"));
 console.log(newLib.stringToNum("756748477"));
-console.log(newLib.validPhone(646464));
 console.log(newLib.daysPassed(2012, 8, 13));
+console.log(newLib.changeSeperate("a,b,c"));
